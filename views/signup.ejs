@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SIGN UP Page</title>
+<!--  <link rel="stylesheet" type="text/css" href="bootstrap.css"> -->
+  <link rel="stylesheet" type="text/css" href="app.css">
+
+</head>
+<body>
+<div class="container">
+  <div class="jumbotron" style="background-color: orange">
+    <h1>WELCOME TO SIGN UP </h1>
+    <p>Please fill the form below </p>
+    <p>if your username is not unique it will render you to this page/p>
+      <p>otherwise to entry page where you have to sign in</p>
+  </div>
+<!--  .form-group
+  .form-control -->
+
+  <form method="POST" action="su">
+    <div class="form-group">
+      <label for="FirstName">First Name</label>
+      <input name="FirstName" type="text" class="form-control" id="" placeholder="First Name" required="text">
+      <label for="">Last Name</label>
+      <input type="text" name="LastName" class="form-control" id="" placeholder="Last Name" required="text">
+    </div>
+    <div class="form-group">
+      <label for="name">Address</label>
+      <input type="text" name="Address" class="form-control" id="" placeholder="Address" required="text">
+    </div>
+    <div class="form-group">
+        <label for="UserName">UserName</label>
+        <input type="text" name="UserName" class="form-control" id="" placeholder="UserName" required="text">
+    </div>
+    <div class="form-group">
+        <label for="ContactNumber">Contact No.</label>
+        <input type="number" name="ContactNumber" class="form-control" id="" placeholder="Contact No." required="text">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="text" name="password" class="form-control" id="" placeholder="Password" required="text">
+      </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</body>
+</html>

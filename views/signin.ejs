@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SIGN IN Page</title>
+<!--  <link rel="stylesheet" type="text/css" href="bootstrap.css"> -->
+  <link rel="stylesheet" type="text/css" href="app.css">
+
+</head>
+<body>
+<div class="container">
+  <div class="jumbotron" style="background-color: orange">
+    <h1>WELCOME!!!!!</h1>
+    <p>if your username and password matches then it will take you to home page</p>
+    <p>otherwise it will render you back here </p>
+  </div>
+<!--  .form-group
+  .form-control -->
+  <form action="si" method="POST">
+    <div class="form-group">
+        <label for="UserName">UserName</label>
+        <input type="text" name="UserName" class="form-control" id="" placeholder="UserName" required="text">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="text" name="password" class="form-control" id="" placeholder="Password" required="text">
+      </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BUY CROPS</title>
+<!--  <link rel="stylesheet" type="text/css" href="bootstrap.css"> -->
+  <link rel="stylesheet" type="text/css" href="app.css">
+
+</head>
+<body>
+    <!-- nav bar portion -->
+
+
+ <nav class="navbar navbar-default" style="background-color: #3333ff">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="home" style="color: white;">Framer Buddy</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right" >
+        <li class="active"><a href="#" style="color: white;background-color: #3333ff">Profile<span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="bc" style="color: white;background-color: #3333ff">Grains<span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="bp" style="color: white;background-color: #3333ff">Stuff<span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="game" style="color: white;background-color: #3333ff">Log Out<span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--   nav bar ends -->
+
+<div class="container">
+  <div class="jumbotron" style="background-color: orange">
+    <h1>WELCOME TO Buy A CROP</h1>
+    <p>Please find the crops below </p>
+  </div>
+  <% ans.forEach(function(crop){%>
+    <div width="650" style="border-block-color: black; border-style: solid; width:650  ">
+        <h2><%=crop.crop%></h2>
+        <img src="./uploads/<%=crop.img%>" width="600" height="400">
+        <h4>Quantity: <%=crop.weight%></h4>
+        <h4>Seller Name : <%= crop.person%></h4>
+        <h4>Contact Number: <%= crop.ContactNumber%></h4>
+        <h4>Address: <%= crop.Address%></h4> 
+        
+    </div><br>
+  <% }) %> 
+
+</body>
+</html>
